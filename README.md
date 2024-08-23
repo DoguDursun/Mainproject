@@ -41,6 +41,7 @@ This application can be run on Docker. You can pull the application from Docker 
 Pull and Run from Docker Hub:
 https://hub.docker.com/repository/docker/dogudursun/mainproject/general
 docker pull dogudursun/mainproject:latest
+The application will be running on http://localhost:8080. The database will be running on PostgreSQL at port localhost:5432.
 
 Cron Jobs
 
