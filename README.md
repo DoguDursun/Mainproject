@@ -65,9 +65,13 @@ URLs
 ProductController.java
 
 GET /api/products          // Retrieve a list of all products
+
 GET /api/products/{id}     // Retrieve a specific product by ID
+
 POST /api/products         // Create a new product
+
 PUT /api/products/{id}     // Update an existing product by ID
+
 DELETE /api/products/{id}  // Delete a product by ID
 
 
