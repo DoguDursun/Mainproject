@@ -59,6 +59,8 @@ Shipping Status Update: This cron job updates the shipping status in the databas
 These cron jobs are implemented using Spring Quartz and are essential for automating and managing background tasks within the application.
 
 
+
+
 URLs
 
 
@@ -78,46 +80,69 @@ DELETE /api/products/{id}  // Delete a product by ID
 UserController.java
 
 GET /api/users               // Retrieve a list of all users
+
 GET /api/users/{id}          // Retrieve a specific user by ID
+
 POST /api/users              // Create a new user
+
 PUT /api/users/{id}          // Update an existing user by ID
+
 DELETE /api/users/{id}       // Delete a user by ID
 
 
 RefundRequestController.java
 
 GET /api/refunds                    // Retrieve a list of all refund requests
+
 GET /api/refunds/{id}               // Retrieve a specific refund request by ID
+
 POST /api/refunds                   // Create a new refund request
+
 PUT /api/refunds/{id}               // Update an existing refund request by ID
+
 DELETE /api/refunds/{id}            // Delete a refund request by ID
+
 GET /api/refunds/tracking/{code}    // Retrieve refund status by tracking code
 
 
 ShippingStatusController.java
 
 GET /api/shipping-status                  // Retrieve a list of all shipping statuses
+
 GET /api/shipping-status/{id}             // Retrieve a specific shipping status by ID
+
 POST /api/shipping-status                 // Create a new shipping status
+
 PUT /api/shipping-status/{id}             // Update an existing shipping status by ID
+
 DELETE /api/shipping-status/{id}          // Delete a shipping status by ID
+
 GET /api/shipping-status/tracking/{code}  // Retrieve shipping status by tracking code
 
 
 ShoppingCartController.java
 
 GET /api/cart/{userId}               // Retrieve the shopping cart for a specific user
+
 POST /api/cart/{userId}/items        // Add an item to the shopping cart
+
 PUT /api/cart/{userId}/items/{id}    // Update a specific item in the shopping cart
+
 DELETE /api/cart/{userId}/items/{id} // Remove an item from the shopping cart
+
 DELETE /api/cart/{userId}            // Clear the shopping cart
 
 
 TransactionController.java
 
 GET /api/transactions                 // Retrieve a list of all transactions
+
 GET /api/transactions/{id}            // Retrieve a specific transaction by ID
+
 POST /api/transactions                // Create a new transaction
+
 PUT /api/transactions/{id}            // Update an existing transaction by ID
+
 DELETE /api/transactions/{id}         // Delete a transaction by ID
+
 GET /api/transactions/user/{userId}   // Retrieve all transactions for a specific user
